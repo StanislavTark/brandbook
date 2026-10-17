@@ -1,0 +1,274 @@
+[
+ {
+  "name": "Colors",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 900,
+  "width": 1100,
+  "readme": "Все цвета брендбука образцами: имя токена, HEX и где применять, по группам; порядок цветов графиков и пастельные теги.\n\n- Таблица с контрастом и полным описанием — раздел «Цвета».\n"
+ },
+ {
+  "name": "CssClasses",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 880,
+  "width": 900,
+  "readme": "Каждый класс темы `css/theme.css` в отрисованном виде рядом с его именем; наведите на последнюю строку, чтобы увидеть поведение.\n\n- Код классов — раздел «Классы CSS».\n"
+ },
+ {
+  "name": "DashboardExample",
+  "group": "0 · Пример дашборда",
+  "n": 0,
+  "height": 1000,
+  "width": 1440,
+  "readme": "Собранная страница дашборда 1440 px: шаблон, вкладки, фильтры, плитки, график и таблица; оранжевые цифры показывают, какое правило брендбука где применено.\n\n- Начинайте знакомство с брендбуком отсюда; расшифровка цифр — под страницей.\n"
+ },
+ {
+  "name": "NumberFormats",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 380,
+  "width": 900,
+  "readme": "Форматы чисел Insight: значение в данных → как его покажет виджет, и где формат применять.\n"
+ },
+ {
+  "name": "ShadowsBorders",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 300,
+  "width": 1000,
+  "readme": "Все тени и рамки брендбука на образцах с пояснением, где каждая применяется.\n"
+ },
+ {
+  "name": "SpacingRadius",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 760,
+  "width": 900,
+  "readme": "Шкала отступов полосками в натуральную величину, все скругления и пример блока с отмеченными отступами.\n\n- Между блоками и плитками — `space-5`, внутри блока — `space-4`, заголовок → тело — `space-3`.\n"
+ },
+ {
+  "name": "Typography",
+  "group": "0 · Основы",
+  "n": 0,
+  "height": 1080,
+  "width": 900,
+  "readme": "Все стили текста живыми строками: как выглядит, имя стиля, размер в rem и px, насыщенность.\n\n- Где какой стиль и через какое свойство Insight его задать — раздел «Шрифты и размерность».\n"
+ },
+ {
+  "name": "KpiAnatomy",
+  "group": "1 · Показатели",
+  "n": 1,
+  "height": 260,
+  "width": 1000,
+  "readme": "Плитка показателя по частям: полоса, подпись, значение, единица, сравнение — с токенами и свойствами ElemMultiKpi.\n"
+ },
+ {
+  "name": "KpiPlan",
+  "group": "1 · Показатели",
+  "n": 1,
+  "height": 150,
+  "width": 1050,
+  "readme": "Плитки плана и факта: план со спидометром выполнения, факт и количество выполнивших со сравнением.\n\n- В Insight: обёртка ElemGridLayout `cssStyle: background #F2F5F9; border-radius 8px; border-top: 3px solid #EB6834; padding 0.6rem 0.9rem`, колонки `auto 1fr`, gap `0.5rem / 1rem`; слева ElemMultiKpi, справа ElemGaugeDremio (`cssStyle max-height 130px`, `percentColor #14171C`, `percentFormat 0`, `limitColor #EB6834`, `valueColor #14171C`, `showLegend false`, `fitHeight true`).\n- План — полоса `orange`, факт и выполнение — `navy`.\n- Значения: `kpi-value` 1.6rem; `postFix` «руб.», «регионов»; формат `0||/d`.\n- Сравнение: `conditionBenchStyle` GT → `#138A5E`, LT → `#C4441A`; иконки `arrow-up-thin` / `arrow-down-thin`.\n"
+ },
+ {
+  "name": "KpiTile",
+  "group": "1 · Показатели",
+  "n": 1,
+  "height": 150,
+  "width": 1100,
+  "readme": "Плитка показателя: подпись, крупное значение с единицей, строка сравнения; цвет полосы сверху говорит о смысле.\n\n- В Insight: ElemMultiKpi (подпись — `textTitle` или отдельный ElemText `sp-ktitle`). `cssStyle: background #F2F5F9; border-radius 8px; border-top: 3px solid <цвет>; padding 0.55rem 0.9rem`, `positionMetric start`.\n- Значение — `kpi-value`: `sizeMetric 1.6rem`, `metricFontWeight 700`, `colorMetric #14171C`. Подпись — `kpi-title`: `sizeTitle 0.8rem`, `titleFontWeight 600`, `colorTitle #52514E`. Единица — `kpi-postfix`: `postfixFontSize 0.85rem`, `postfixColor #52514E`.\n- Цвет полосы: `blue`/`navy` — объём; `green` — в норме, выполнено; `orange` — риск, просрочка, план; `red` — отклонение; `violet` — 1С, переплата.\n- Сравнение: `benchmarkIconRules` GT → `arrow-up-thin` `green`, LT → `arrow-down-thin` `red`; текст сравнения 0.75rem `muted`.\n- Пояснение — `showHint: true`, `textHint` полным предложением, фон подсказки `tint`.\n- Ряд: `repeat(N, minmax(0,1fr))`, N = 4–5, gap `space-5`. Суммы — формат `1|c|/d`, количества — `0||/d`.\n- Не используйте градиентные и тёмные заливки плиток (`backgroundGradColor` — `transparent`).\n"
+ },
+ {
+  "name": "ActionButtons",
+  "group": "2 · Кнопки",
+  "n": 2,
+  "height": 130,
+  "width": null,
+  "readme": "Текстовые кнопки действий: «Сбросить», «Открыть →», кнопка-заголовок и переключатель режима в капсуле.\n\n- «Сбросить» — ElemFiltersDremio в ElemButton (`filters` → `null`): белая таблетка 1.9rem, рамка `line`, 0.8rem, иконка `window-close`.\n- «Открыть →» — та же таблетка, текст `navy` 600, `url` дашборда.\n- Кнопка-заголовок — класс `btn-title` (200 × 28px, `navy`, 16px); наведение — `shadow-hover` и увеличение 1.05.\n- Кнопка раздела — ElemFiltersDremio: высота 2.3rem, `radius-pill`, `navy`, белый, 600, 0.875rem.\n- Переключатель — капсула `chip` с `padding 3px`, внутри две кнопки-чипа; выбранная `navy`/белый/600, невыбранная прозрачная с текстом `navy`; иконки `view-grid-outline`, `monitor-dashboard`.\n"
+ },
+ {
+  "name": "ChipGroup",
+  "group": "2 · Кнопки",
+  "n": 2,
+  "height": 110,
+  "width": null,
+  "readme": "Кнопки-чипы по значениям измерения: дивизионы, годы, типы. Один выбранный — `navy`.\n\n- В Insight: ElemFiltersDremio по измерению (datasets → dims).\n- `fontOptions`: высота 1.9rem, `radius-pill`, 0.8rem (`button`), `padding 0 0.8rem`, `margin-right 6px`, `white-space: nowrap`.\n- `activeButtonStyle`: `navy`, белый, 600. `disabledButtonStyle`: `chip`, текст `navy`.\n- Подписи — значения из данных как есть. Для «все значения» добавьте первым ручной чип «Все …» со сбросом.\n- Для 2–3 взаимоисключающих режимов («Дашборды / Избранное») — та же кнопка в капсуле `chip` с `padding 3px`.\n"
+ },
+ {
+  "name": "RoundButton",
+  "group": "2 · Кнопки",
+  "n": 2,
+  "height": 90,
+  "width": null,
+  "readme": "Круглая кнопка-иконка 2.1rem: навигация в шапке и выгрузка в панели фильтров.\n\n- В Insight: ElemFiltersDremio, по одному на кнопку, `buttonsArray: [{ \"icon\": \"<mdi>\", \"url\": \"…\" }]`, `cssClass [\"text-increase-a\"]`, `hoverColor #184F95`; выгрузка — внутри ElemReport, `cssClass [\"icon\"]`.\n- `fontOptions` `.btn-new`: 2.1rem × 2.1rem (`size-round`), `radius-round`, фон `chip`, иконка `navy` 1.15rem (`size-round-icon`). Наведение — фон `navy`, иконка белая, увеличение 1.2.\n- Иконки шапки — строго `home`, `book-open-page-variant`, `information-variant`, `account-arrow-right`; выгрузка — `download`.\n- Снимок экрана — ElemScreenshoter: иконка 1.6rem `navy` без круга, меню `jpeg` (`file-jpg-box`) и `pdf` (`file-pdf-box`).\n- Подписи у круглых кнопок нет — задайте `title`/подсказку с названием действия.\n"
+ },
+ {
+  "name": "TabNav",
+  "group": "2 · Кнопки",
+  "n": 2,
+  "height": 80,
+  "width": null,
+  "readme": "Вкладки страниц дашборда под шапкой: активная — светлое поле с полосой `navy` сверху.\n\n- В Insight: ElemFiltersDremio в ElemButton, `buttonsArray` с `url` страниц, `marginBetweenButtons 0`. Ряд — ElemGridLayout с `border-bottom: 1px solid #E3E2DD`.\n- `fontOptions`: высота `size-tab-h` 2.4rem, `padding 0 1rem`, `border-radius 6px 6px 0 0`, `font-size 0.9rem` (`tab`).\n- Активная: фон `tint`, текст `navy` 600, рамка `line` без низа, `shadow-tab`. Неактивная: прозрачная, текст `muted`.\n- Названия — существительные с прописной, 1–2 слова: «Все заказы», «План», «За вчера», «Детализация».\n- Не больше 6 вкладок; иконки во вкладках не ставьте.\n"
+ },
+ {
+  "name": "Badge",
+  "group": "3 · Бейджи",
+  "n": 3,
+  "height": 150,
+  "width": null,
+  "readme": "Бейджи со смыслом: статусы, технические статусы с подсказкой, метки систем АИС/1С, NEW.\n\n- Статус — ElemBadge с заливкой: `green` (действующая, enabled, доступ есть), `red` (ликвидирована, disabled), `amber` с текстом `ink` (replica, low_usage), `navy` (always), `muted` (банкротство). `borderRadius 0.5rem`, 0.7rem 600, текст белый.\n- Технический статус с подсказкой — ElemText `<span class=\"bi-status-badge bi-status-enabled\">enabled</span>`: таблетка 20px, ПРОПИСНЫЕ, подсказка при наведении из темы.\n- Системы — `<span class=\"sp-sys sp-ais\">АИС</span>` / `sp-ms` 1С внутри `sp-sys-legend`.\n- NEW — `orange`, 10px 700, `radius-xs`, текст `ink` (белый даёт 3,2:1).\n- Цвет без смысла (категории, отделы) — это теги, см. `TagCloud`.\n"
+ },
+ {
+  "name": "TagCloud",
+  "group": "4 · Теги",
+  "n": 4,
+  "height": 230,
+  "width": 900,
+  "readme": "Теги: облако значений для фильтрации, пастельные теги категорий и метки раздела.\n\n- Облако — ElemTagCloudDremio: `clouds[0].color #E4F0FC`, `textColor #184F95`, `isColorCloud false`, `isCloudOctotorp false`. Выбранный тег — `navy` с белым текстом. Значения — как в данных.\n- Теги категорий (отделы, роли, группы) — ElemBadge `customBgColor { isColorStepEnabled: true, colorsByOrder: [pastel-1 … pastel-9] }`, текст `ink`, `borderRadius 0.5rem`, 0.7rem 600.\n- Метка раздела («НСИ», «Обновление») — ElemBadge `customBgColor #E4F0FC`, текст `#184F95`.\n- Цвет тега не несёт смысла. Если цвет должен означать статус — это `Badge`.\n"
+ },
+ {
+  "name": "DataTable",
+  "group": "5 · Таблицы",
+  "n": 5,
+  "height": 250,
+  "width": 1000,
+  "readme": "Таблица данных: заголовки `muted`, строки с разделителем `line`, числа вправо, наведение и выбор — `chip`.\n\n- В Insight: ElemTable `cssStyle: background #FFFFFF; border-radius 8px; box-shadow 0 0 0 1px #E3E2DD`, внутри блока `Block`.\n- ElemHeader: `padding 0.375rem`, `fontSize var(--font-size-smaller)`, `color #52514E`, иконка сортировки `navy`; у числовых колонок `cssClass d-flex flex-h-end`.\n- ElemRow: `style.hover` и `style.select` — `bgColor #E4F0FC`, `fontWeight 600`; `border.color #E3E2DD`.\n- ElemValue: `padding 0.375rem`, `fontSize 0.8rem`, `color #14171C`; вторая строка (ФО, дивизион) — 0.7rem `muted`; числа — `text-right`, формат `0||/d`.\n- Отклонение — styleConditions: `background #FCE9E2; color #C4441A; border-radius 4px; padding 0.1rem 0.35rem`, полужирным. Динамика — стрелки `arrow-up-thin`/`arrow-down-thin`.\n- Итог — строкой 700. Внизу — `Paginator`.\n"
+ },
+ {
+  "name": "Paginator",
+  "group": "5 · Таблицы",
+  "n": 5,
+  "height": 70,
+  "width": null,
+  "readme": "Переключатель страниц таблицы: квадратные кнопки 4px, текущая — `navy`.\n\n- В Insight: ElemPaginator в слоте `footer`. `style.fontSize var(--font-size-smaller)`, `color #184F95`, `bgColor #F7F8F9` (`pager-bg`), `colorActive #FFFFFF`, `bgColorActive #184F95`, `pagesCount 5`, `digitSeparator ru-RU`.\n- Справа под таблицей, отступ `space-cell`.\n"
+ },
+ {
+  "name": "TableAnatomy",
+  "group": "5 · Таблицы",
+  "n": 5,
+  "height": 330,
+  "width": 1150,
+  "readme": "Таблица по частям: рамка, заголовок колонки, ячейки, вторая строка, числа, выбранная строка, отклонение, итог, пагинатор.\n"
+ },
+ {
+  "name": "DonutChart",
+  "group": "6 · Круговые и кольцевые",
+  "n": 6,
+  "height": 330,
+  "width": 960,
+  "readme": "Кольцевая диаграмма: структура целого, сумма в центре, легенда справа с долями.\n\n- В Insight: ElemPieChartDremio. Большое кольцо — `metrics.chart.outsideRadius 120px`, `insideRadius 80px`; компактное (в узком блоке) — `80px` / `60px`.\n- Центр — `metrics.sum.show true`: значение `fontSize 1rem`, `color #14171C`, формат `1|c| руб./d` (количества — `0|c| шт./d`); подпись `nameFontSize 0.8rem`, `nameColor #14171C`, `namePosition bottom`.\n- Цвета — `indexColors` по порядку: `#2A78D6, #EB6834, #1BAF7A, #EDA100, #E87BA4, #6250D6, #E34948, #184F95, #52514E, #9EC5F4`. Для постоянных категорий — `colorSet` с явными цветами («Отгружено» `blue`, «В заказе» `orange`, «В накладной» `violet`).\n- Подписи `label.pattern 1|c|/d` или `0|%|/d`, `fontSize 12`; `itemStyle.borderWidth 0`; подсказка `tooltip.fontSize 14`.\n- Легенда — `color #52514E`, `fontSize 0.8rem`, справа (`legendManualSize left 60%`); `dimensionSort asc`.\n- Белый фон (`card`) с `shadow-outline` внутри блока. Больше 6–7 долей — объединяйте в «Прочие».\n"
+ },
+ {
+  "name": "GaugeChart",
+  "group": "6 · Круговые и кольцевые",
+  "n": 6,
+  "height": 220,
+  "width": 640,
+  "readme": "Спидометр выполнения плана: дуга факта `navy` на `track`, процент в центре.\n\n- В Insight: ElemGaugeDremio: `percentColor #14171C`, `percentFormat 0`, `percentPosition center`, `showLegend false`, `fitHeight true`, `cssStyle max-height 130px`.\n- `levels[0]`: `limitColor #EB6834` (граница плана), `valueColor #14171C`, `nameLimit` «Годовой план», `nameValue` «Факт», `format percent`.\n- Ставьте внутри плитки плана (`KpiPlan`) или рядом в один ряд по дивизионам.\n- В старых страницах «Заказов» есть белые спидометры на тёмном фоне (`#fcfdff`, `#ffa802`, `#0398fc`, ширина 8) — переводите на светлый вариант.\n"
+ },
+ {
+  "name": "PieChart",
+  "group": "6 · Круговые и кольцевые",
+  "n": 6,
+  "height": 320,
+  "width": 860,
+  "readme": "Круговая диаграмма без отверстия и порядок цветов долей.\n\n- В Insight: ElemPieChartDremio с `metrics.chart.type: \"pie\"` (без `insideRadius`).\n- Используйте, когда долей 2–4 и важна доля, а не сумма. Сумма в центре нужна — берите `DonutChart`.\n- Смысловые статусы красьте смысловыми цветами через `colorSet`: «Подписан» `green`, «Отменен» `red`, «Требует уточнения» `amber`, «В работе» `navy`. Остальное — `indexColors`.\n- Легенда — 0.8rem `muted`.\n"
+ },
+ {
+  "name": "BarChart",
+  "group": "7 · Бары и линейные",
+  "n": 7,
+  "height": 300,
+  "width": 700,
+  "readme": "Вертикальные столбцы по периодам: сравнение лет от светлого к тёмному.\n\n- В Insight: ElemMultiSpline, `metricsStyle[].type: \"bar\"`; ось X — категория (месяц), ось Y — значение.\n- Цвета рядов — `year-2023` #B7D3F6, `year-2024` #6DA7EC, `year-2025` #2A78D6, `year-2026` #184F95. Один ряд — `blue`.\n- Столбец: `roundedBarBorder { leftTop 2, rightTop 2, rightBottom 0, leftBottom 0 }`, `barMaxWidth 20`.\n- Оси: `axisLabel.color #52514E`, 12px (0.75rem); ось X — линия `#E3E2DD`; сетка `splitLine` — `#DCDFE4`, `dashed`.\n- Подсказка `tooltip.trigger: axis`; легенда снизу, маркер `circle`, 0.8rem.\n- Белый фон (`card`) с `shadow-outline`; заголовок графика — в блоке, `mainTitle.show false`.\n"
+ },
+ {
+  "name": "HBarChart",
+  "group": "7 · Бары и линейные",
+  "n": 7,
+  "height": 290,
+  "width": 680,
+  "readme": "Горизонтальные столбцы: рейтинг регионов или организаций, значение справа от столбца.\n\n- В Insight: ElemMultiSpline, `type: \"bar\"`, ось Y — категория, ось X — значение (`axisLabel.show false`).\n- Цвета: основная мера `blue`, вторая (просрочка, план) — `orange`.\n- Подписи: `label.show true`, `position right`, `color #14171C`, 0.8rem (в проекте 14px).\n- Столбец: `barMaxWidth 12–20`, скругление 2 сверху. Названия — `axisLabel` слева, `#14171C`, 0.8rem.\n- Сетка `grid.isManualMode`, `left` 24–40% под длинные названия.\n"
+ },
+ {
+  "name": "LineChart",
+  "group": "7 · Бары и линейные",
+  "n": 7,
+  "height": 300,
+  "width": 700,
+  "readme": "Линии динамики по годам: текущий год — самый тёмный, с заливкой под линией.\n\n- В Insight: ElemMultiSpline, `metricsStyle[].type: \"line\"`.\n- Линия: `lineStyle { type solid, width 2 }`, `smooth true` (или прямые — единообразно на странице), точки `symbol emptyCircle`, `symbolSize 8`.\n- Цвета — `year-*`; текущий год `navy` + заливка `areaStyle` `rgba(24, 79, 149, 0.10)` (`fillLine true`).\n- Подписи значений скрыты (`label.show false`), значения — в подсказке `tooltip.trigger axis`.\n- Оси и сетка — как у `BarChart`. План на графике — линия `orange`, пунктир.\n"
+ },
+ {
+  "name": "StackedBar",
+  "group": "7 · Бары и линейные",
+  "n": 7,
+  "height": 270,
+  "width": 680,
+  "readme": "Накопительные горизонтальные столбцы: состав по статусам с числами внутри сегментов.\n\n- В Insight: ElemMultiSpline, `type: \"bar\"`, `customType: \"stacked\"`, ось Y — категория.\n- Цвета статусов — `customColors` по смыслу: действующий `teal` #1BAF7A, к увольнению `orange`, уволен `red`, декрет `blue`; выполнено `green`, предупреждение `amber`.\n- Подписи внутри: `label.position inside`, `color #FFFFFF`, 0.75rem 600 (в проекте 1.5rem — уменьшите), `isZeroValueShown false`.\n- Скругление `roundedBarBorder` 10 со всех сторон, `barGap 0rem`.\n- Легенда снизу, `icon circle`, 0.8rem; оси скрыты (`axisLabel.show false`, `splitLine.show false`).\n- Сине-голубая шкала `hsl(209,100%,20…100%)` — только для упорядоченных значений; для статусов — смысловые цвета.\n"
+ },
+ {
+  "name": "ProgressBar",
+  "group": "8 · Прогресс-бары",
+  "n": 8,
+  "height": 380,
+  "width": 820,
+  "readme": "Полоса «факт из плана»: подписи сверху, полоса 1rem `navy` на `track`; варианты в строке таблицы и компактный.\n\n- В Insight: ElemProgressBar, `dataField` — факт, `planDataField` — план. `barHeight 1rem`, `barRadius 1rem`, `fact.gradient { isEnabled: true, colorStops: [\"#184F95\", \"#184F95\"] }`.\n- Подписи `fact.value` / `plan.value`: `#14171C`, 0.8rem, `position top`, формат `1|c| руб./d`; имена «Факт» и «План», 0.8rem.\n- В таблице рядом — колонка «%» (`0|| %/d`, 1rem) и отметка выполнения: ElemValue со `styleConditions` факт > план → `cssClass [\"mdi\", \"mdi-checkbox-marked-circle-outline\"]`, `color #138A5E` (в проекте `green`, 38px → ставьте 1.5rem).\n- Компактная полоса без подписей — `barHeight 0.5rem`, процент справа.\n- Пустая часть — `track` #CDE2FB. Перевыполнение не рисуйте за 100%: полоса заполнена, процент и отметка говорят остальное.\n"
+ },
+ {
+  "name": "Block",
+  "group": "9 · Шаблон и блоки",
+  "n": 9,
+  "height": 220,
+  "width": null,
+  "readme": "Блок-карточка страницы: заголовок с номером и белое тело — таблица, график или список.\n\n- В Insight: ElemGridLayout `cssStyle: background #F2F5F9; border-radius 8px; padding 0.75rem; align-content start`, ряды `auto auto` (для графика `auto 15rem`), gap `0.5rem / 0`.\n- Заголовок — ElemText: `<div class=\"sp-blk\"><span class=\"sp-num\">1</span>Заголовок</div>`; подзаголовок под ним — `sp-sub`.\n- Тело — ElemTable или график с `cssStyle: background #FFFFFF; border-radius 8px; box-shadow 0 0 0 1px #E3E2DD`.\n- Нумеруйте блоки по порядку чтения: слева направо, сверху вниз. Заголовок графика — в блоке, `mainTitle.show: false`.\n"
+ },
+ {
+  "name": "Callout",
+  "group": "9 · Шаблон и блоки",
+  "n": 9,
+  "height": 120,
+  "width": null,
+  "readme": "Врезка с выводом или предупреждением: светлый тёплый фон и полоса `orange` слева.\n\n- В Insight: ElemText `<div class=\"sp-callout\"><div class=\"sp-note-title\">Заголовок</div>Текст</div>`.\n- 1–2 предложения: что произошло и почему. Не больше одной врезки на блок.\n- Пояснение к данным (источник, время обновления) — `sp-note`, не врезка.\n"
+ },
+ {
+  "name": "PageGrid",
+  "group": "9 · Шаблон и блоки",
+  "n": 9,
+  "height": 440,
+  "width": 1000,
+  "readme": "Скелет страницы: шаблон, контент в одну колонку, порядок «фильтры → плитки → блоки», все размеры сетки.\n\n- Шаблон: `padding 0.75rem 2rem 0` (`space-page-x`), колонки `auto 1fr`, логотип 60px.\n- Контент: одна колонка `minmax(0,1fr)`, `padding 0.5rem 0 1.5rem`, ряды `auto`, gap `space-5` 0.9rem.\n- Плитки: `repeat(N, minmax(0,1fr))`, gap 0.9rem. Блоки: `minmax(0,1.6fr) minmax(0,1fr)` или `1fr 1fr`, gap 0.9rem.\n- Готовые JSON-настройки ElemGridLayout — в разделе «Шрифты и размерность» → «Сетка».\n"
+ },
+ {
+  "name": "PageHeader",
+  "group": "9 · Шаблон и блоки",
+  "n": 9,
+  "height": 230,
+  "width": 1100,
+  "readme": "Шапка шаблона страницы: логотип, рубрика и название, круглые кнопки навигации, плашка «Обновлено» и ряд вкладок.\n\n- В Insight: шаблон «Шаблон (для дашбордов)». Корневой ElemGridLayout `cols auto 1fr`, `rows auto 1fr`, `gap 0.5rem / 0`, `cssStyle: background #FFFFFF; padding: 0.75rem 2rem 0`.\n- Слева — ElemImage `avatarMode` 60px (`size-logo`). Справа — ElemGridLayout с линией `border-header` снизу, `padding-bottom 0.4rem`, `margin-bottom 0.25rem`.\n- Текст — ElemText: `<div class=\"sp-kicker\">…</div><h2 class=\"sp-title\">…</h2>`, `padding: 0.25rem 0.5rem`.\n- Справа сверху — четыре `RoundButton` (`home`, `book-open-page-variant`, `information-variant`, `account-arrow-right`) с зазором `space-3`; под ними плашка `tint` 6px с двумя ElemMultiKpi («Обновлено», количество за вчера), текст 0.75rem `muted`, значения `ink` 600.\n- Ниже — `TabNav`.\n- Что дать: рубрику, название, адреса кнопок, метрики плашки. Не добавляйте в шапку фильтры и KPI — им место в контенте.\n"
+ },
+ {
+  "name": "FilterBar",
+  "group": "10 · Фильтры",
+  "n": 10,
+  "height": 100,
+  "width": 1100,
+  "readme": "Панель фильтров страницы: подпись группы, выпадающие фильтры-таблетки, справа выгрузка и «Сбросить».\n\n- В Insight: ElemGridLayout, `cssStyle: background #F2F5F9; border-radius 8px; padding 0.5rem 0.8rem`, колонки `auto minmax(0,1fr) auto auto`, gap `0 / 0.75rem`. Первая строка контента страницы.\n- Подпись — ElemText `sp-flabel` («План и «вчера» — за 2026 год»).\n- Фильтр — ElemFilter: таблетка `radius-pill`, белая, `shadow-outline`, ширина 170–240px, плейсхолдер — название измерения («Регион», «Дивизион»). Подсветка выбранного `backlight #184F95`, наведение пункта `chip`/`navy`. Кнопки внутри: «Очистить» `orange`, «Применить» и «Выбрать все» `green`, текст `ink`.\n- «Сбросить» — ElemFiltersDremio в ElemButton (`filters`: все измерения страницы → `null`), белая таблетка 1.9rem с рамкой `line`, иконка `window-close`.\n- Выгрузка — `RoundButton` `download` внутри ElemReport.\n- Не больше 4–5 фильтров в ряд; остальные — в окно по `filter-menu-outline`.\n"
+ },
+ {
+  "name": "SearchField",
+  "group": "10 · Фильтры",
+  "n": 10,
+  "height": 80,
+  "width": null,
+  "readme": "Поле поиска по таблице: белая таблетка с иконкой `magnify`.\n\n- В Insight: ElemStandardFilter. `borderRadius 999px`, `widgetColor`/`inputBackgroundColor #FFFFFF`, `inputColor #14171C`, `placeHolderColor #626262` (`placeholder`), `backlight #184F95`, тень `shadow-search` + `shadow-outline`, `searchFontSize 0.8rem`.\n- Высота 2.2rem, ширина до 32rem; ставьте над таблицей справа или в `FilterBar`.\n- Плейсхолдер говорит, что ищем: «Найти организацию или ИНН».\n"
+ },
+ {
+  "name": "IconSet",
+  "group": "11 · Иконки",
+  "n": 11,
+  "height": 560,
+  "width": 1000,
+  "readme": "Иконки Material Design Icons, которые используют дашборды, по группам — с именами для поля `icon`.\n\n- В Insight пишите имя без `mdi-`; в `cssClass` — `[\"mdi\", \"mdi-<имя>\"]`.\n- Цвет — по смыслу из токенов (`navy`, `green`, `red`, `amber`, `orange`, `muted`); на `chip` — `navy`.\n- Полный словарь со значениями — раздел «Иконки MDI». Картинки перерисованы из превью дашбордов; эталон — набор MDI в Insight. Иконки `file-*-box` и `checkbox-marked-circle-outline` есть только в словаре.\n"
+ }
+]
